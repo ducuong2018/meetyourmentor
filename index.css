@@ -1,0 +1,22 @@
+html {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  cursor: pointer;
+}
+.menu > span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #007d85;
+  margin-right: 17px;
+}/*# sourceMappingURL=index.css.map */
