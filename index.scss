@@ -1,6 +1,7 @@
 html {
   font-family: "Inter";
   font-style: normal;
+  overflow: scroll;
 }
 
 a {
@@ -8,8 +9,12 @@ a {
     text-decoration: none;
   }
 }
+section {
+  margin-top: 80px;
+}
 
 #head {
+  margin-top: 0px;
   background-image: url("./assets/images/background-introduction.png");
   height: 820px;
   background-position: center;
@@ -26,6 +31,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 42px;
 }
 
 .title {
@@ -35,6 +41,12 @@ a {
   letter-spacing: -0.3px;
 
   color: #333333;
+  text-align: center;
+
+  // @media (min-width: 576px) {
+  //   font-size: 24px;
+  //   line-height: 29px;
+  // }
 }
 
 .menu {
@@ -51,10 +63,16 @@ a {
 }
 .wrap-introduction {
   display: flex;
+  // @media (min-width: 576px) {
+  //   flex-direction: column;
+  // }
   > .left {
     max-width: 520px;
-    margin-top: 286px;
+    margin-top: 235px;
     margin-right: 50px;
+    // @media (min-width: 576px) {
+    //   margin-top: 57px;
+    // }
     > h4 {
       color: #007d85;
     }
@@ -68,9 +86,34 @@ a {
 
       margin-top: 24px;
     }
+    > .wrap-read-more {
+      margin-top: 24px;
+      > .read-more {
+        background: #00becb;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.165px;
+
+        color: #ffffff;
+        padding: 11px 34px;
+      }
+    }
+
+    > .wrap-dowload {
+      margin-top: 82px;
+      > .dowload {
+        margin-top: 6.5px;
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
   > .right {
-    margin-top: 120px;
+    margin-top: 74px;
     > img {
       width: 100%;
     }
@@ -78,7 +121,6 @@ a {
 }
 
 .mentor-team {
-  margin-top: 80px;
   text-align: center;
   > .description {
     font-weight: 500;
@@ -128,7 +170,7 @@ a {
 
 #statue {
   background-image: url("./assets/images/statue.png");
-  max-height: 800px;
+  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,5 +193,154 @@ a {
     > .explain {
       font-size: 24px;
     }
+  }
+}
+
+.list-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+
+  > .event {
+    width: 410px;
+    height: 310px;
+    margin-top: 40px;
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(191, 191, 191, 0.25);
+    border-radius: 8px;
+    > img {
+      height: 190px;
+    }
+    > .description {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.3px;
+      color: #333333;
+      margin-top: 20px;
+    }
+    > .privacy {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.3px;
+      color: #333333;
+
+      display: flex;
+      align-items: center;
+
+      > img {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.list-podcast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  > .podcast {
+    width: 300px;
+    > img {
+      height: 300px;
+    }
+    > .description {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.3px;
+      color: #333333;
+      margin-top: 12px;
+    }
+    > .name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.3px;
+
+      color: #333333;
+    }
+  }
+}
+
+.list-partner {
+  display: flex;
+  justify-content: space-between;
+  width: 834px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 40px;
+  > img {
+    height: 102px;
+    width: 102px;
+    margin-right: 81px;
+    &:nth-child(5),
+    &:nth-child(10) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5n -4) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: #ffffff;
+
+  height: 318px;
+  background: #303435;
+  box-shadow: 0px -1px 1px rgba(172, 172, 172, 0.25);
+}
+
+.wrap-top-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: #3b3b3b 1px solid;
+  .label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+
+    margin-top: 104px;
+    margin-bottom: 15px;
+  }
+  > .wrap-logo {
+    margin-top: 60px;
+    > .logo-footer {
+      width: 181.64px;
+      height: 62.86px;
+    }
+
+    > .address {
+      width: 411px;
+      margin-top: 22.5px;
+    }
+  }
+  > .contact {
+    width: 197px;
+  }
+  > .co-operate {
+    width: 391px;
+  }
+}
+
+.wrap-bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  > .social {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
