@@ -583,3 +583,109 @@ footer {
   height: 300px;
   object-fit: cover;
 }
+
+#statistical {
+  margin-left: 110px;
+  margin-right: 110px;
+  background-image: url("./assets/images/background-statistical.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-attachment: fixed;
+  height: 485px;
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+    margin-right: 0;
+    height: 340px;
+    background-image: url("./assets/images/background-statistical-mobile.png");
+  }
+}
+.wrap-statistical {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 137px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 104px;
+  }
+  > .left {
+    display: flex;
+    align-items: center;
+    column-gap: 148px;
+    @media (max-width: 576px) {
+      column-gap: 48px;
+    }
+  }
+  > .left > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  > .left > div > .label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #333333;
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  > .left > div > .value {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #333333;
+    @media (max-width: 576px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  > .right {
+    @media (max-width: 576px) {
+      text-align: center;
+      margin-top: 32px;
+    }
+    max-width: 520px;
+    text-align: right;
+    > .label {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.3px;
+      text-transform: uppercase;
+      color: #333333;
+      @media (max-width: 576px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    > .text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: right;
+      letter-spacing: -0.3px;
+      color: #828282;
+
+      margin-top: 24px;
+
+      @media (max-width: 576px) {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}
