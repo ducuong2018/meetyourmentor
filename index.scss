@@ -315,10 +315,16 @@ section {
     background: #ffffff;
     box-shadow: 0px 2px 4px rgba(191, 191, 191, 0.25);
     border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: scale(0.95);
+      box-shadow: #000;
+    }
     @media (max-width: 576px) {
       margin-top: 20px;
       width: 100%;
     }
+
     > img {
       height: 190px;
       @media (max-width: 576px) {
@@ -378,6 +384,11 @@ section {
   }
   > .podcast {
     width: 300px;
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: scale(0.95);
+      box-shadow: #000;
+    }
 
     @media (max-width: 576px) {
       width: 160px;
